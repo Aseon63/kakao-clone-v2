@@ -1,0 +1,104 @@
+<!--채팅 창-->
+<!DOCTYPE html>
+<html lang="en"> <!--language-->>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chats | Kakao Clone</title>
+    <script src="https://kit.fontawesome.com/2d2079e3a6.js"></script> <!-- Font Awesome 에서 Icon을 불러오기 위함-->
+</head>
+<body>
+    <div class="status-bar"> <!-- Status Bar에 대한 HTML-->
+        <div class="status-bar__column"> <!--두 가지 column으로 나눔-->
+            <span class="status-bar__clock"> <!--Status Bar 안의 시계-->
+                13:54
+            </span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-clock"></i> <!--Icon 이름을 알면 i.fas.fa-iconname 을 통해 shortcut 가능-->
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span> <!-- 배터리 잔량 표시-->
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <heade class="header"> <!--Header를 두 가지 column으로 구분함-->
+        <div class="header_header-column">
+            <h1 class="header_title">Chats</h1>
+        </div>
+        <div class="header_header-column">
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+                <i class="far fa-comment"></i>
+            </span>
+            <span class="header__icon">
+                <i class="fas fa-cog"></i>
+            </span>
+        </div>
+    </header>
+
+
+    <main class="chats"><!--브라우저의 main부분이라는 것을 알려줌-->
+        <ul class="chats__list"> <!--채팅창 전체-->
+            <a href="chat.html">
+                <li class="chats__chat chat"> <!-- 채팅창의 리스트를 생성-->
+                    <div class="chat__column"> <!--프사랑 채팅창명, 마지막 채팅을 보여줌-->
+                        <img class="chat__avatar g-avatar" src="images/avatar.PNG"> <!--두가지 class, 하나는 공통 적용되는 global avatar-->
+                        <div class="chat__conent">
+                            <span class="chat__username"> <!--대화자 명-->
+                                Lynn
+                            </span>
+                            <span class="chat__preview"> <!--마지막 채팅-->
+                                Going Home
+                            </span>
+                        </div>
+                    </div> 
+                    <div class="chat_column"> <!--마지막 채팅이 올라온 시간을 보여줌-->
+                        <span class="chat__timestamp">
+                            Yesterday
+                        </span>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </main>
+
+
+
+
+
+
+
+
+    <nav class="nav">  <!--최하단의 Navigation Bar-->
+        <ul class="nav__list"> <!--Nav 속 버튼들을 list로 만듬-->
+            <li class="nav__list-item">
+                <a href="friends.html" class="nav__list-link"> <!--누르면 다른 페이지로 이동하게-->
+                    <i class="far fa-user"></i> <!--버튼의 아이콘-->
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                    <i class="fas fa-comment"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!--친구목록 창-->
+<!DOCTYPE html>
+<html lang="en"> <!--language-->>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friends | Kakao Clone</title>
+    <script src="https://kit.fontawesome.com/2d2079e3a6.js"></script> <!-- Font Awesome 에서 Icon을 불러오기 위함-->
+</head>
+<body>
+    <div class="status-bar"> <!-- Status Bar에 대한 HTML-->
+        <div class="status-bar__column"> <!--두 가지 column으로 나눔-->
+            <span class="status-bar__clock"> <!--Status Bar 안의 시계-->
+                13:54
+            </span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-clock"></i> <!--Icon 이름을 알면 i.fas.fa-iconname 을 통해 shortcut 가능-->
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span> <!-- 배터리 잔량 표시-->
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <header class="header"> <!--Header를 두 가지 column으로 구분함-->
+        <div class="header_header-column">
+            <h1 class="header_title">Friends</h1>
+        </div>
+        <div class="header_header-column">
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+                <i class="fas fa-cog"></i>
+            </span>
+        </div>
+    </header>
+
+
+
+    <main class="friends">
+        <header class="friends__header">
+            <li class="friends__friend friend friend--lg"> <!--friend large-->
+                <div class="friend__column">
+                    <img src="images/avatar.PNG" alt="" class="g-avatar friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                             Seungeon Kang
+                        </span>
+                        <span class="friend__status">
+                            Aseon Music
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </header>
+
+        <div class="friends__plus">
+            <h5 class="friends__plus-title">Plus Friend</h5>
+            <div class="friends__friend friend"> <!--friend large-->
+                <div class="friend__column">
+                        <img src="images/avatar.PNG" alt="" class="g-avatar friend__avatar">
+                        <div class="friend__content">
+                            <span class="friend__name">
+                                 Plus Friend
+                            </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="friends__list">
+            <h5 class="friends__title">
+                Friends 14
+            </h5>
+            <li class="friends__friend friend"> <!--friend large-->
+                <div class="friend_column">
+                    <img src="images/avatar.PNG" alt="" class="g-avatar friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            Hokyum Kim
+                        </span>
+                        <span class="friend__status">
+                            Minnesota
+                        </span>
+                    </div>    
+                </div>
+                <div class="friend__column">
+                    <div class="friend__now-listening">
+                        <span></span>
+                        Travis Scott - (SICKOMODE)
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+
+    <nav class="nav">  <!--최하단의 Navigation Bar-->
+        <ul class="nav__list"> <!--Nav 속 버튼들을 list로 만듬-->
+            <li class="nav__list-item">
+                <a href="friends.html" class="nav__list-link"> <!--누르면 다른 페이지로 이동하게-->
+                    <i class="fas fa-user"></i> <!--버튼의 아이콘-->
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                    <i class="far fa-comment"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul> <!--각각의 버튼을 누르면 이동된 페이지엥서 누른 버튼만 fat해짐-->
+    </nav>
+
+
+</body>
+</html>

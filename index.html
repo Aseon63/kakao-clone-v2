@@ -54,32 +54,34 @@
 			<!--브라우저의 main부분이라는 것을 알려줌-->
 			<ul class="chats__list">
 				<!--채팅창 전체-->
-				<a href="chat.html">
-					<li class="chats__chat chat">
-						<!-- 채팅창의 리스트를 생성-->
-						<div class="chat__column">
-							<!--프사랑 채팅창명, 마지막 채팅을 보여줌-->
-							<img class="chat__avatar g-avatar" src="images/avatar.PNG" />
-							<!--두가지 class, 하나는 공통 적용되는 global avatar-->
-							<div class="chat__conent">
-								<span class="chat__username">
-									<!--대화자 명-->
-									Lynn
-								</span>
-								<span class="chat__preview">
-									<!--마지막 채팅-->
-									Going Home
+				<li class="chats__chat chat">
+					<!-- 채팅창의 리스트를 생성-->
+					<a href="chat.html">
+						<div class="chats__chat friend friend--lg">
+							<!--friend large-->
+							<div class="friend__column">
+								<img
+									src="images/avatar.PNG"
+									alt=""
+									class="m-avatar friend__avatar"
+								/>
+								<div class="friend__content">
+									<span class="friend__name">
+										Hokyum Kim
+									</span>
+									<span class="friend__bottom-text">
+										Going Home!
+									</span>
+								</div>
+							</div>
+							<div class="friend__column">
+								<span class="chat__timestamp">
+									March 8
 								</span>
 							</div>
 						</div>
-						<div class="chat_column">
-							<!--마지막 채팅이 올라온 시간을 보여줌-->
-							<span class="chat__timestamp">
-								Yesterday
-							</span>
-						</div>
-					</li>
-				</a>
+					</a>
+				</li>
 			</ul>
 		</main>
 
@@ -96,6 +98,7 @@
 				</li>
 				<li class="nav__list-item">
 					<a href="index.html" class="nav__list-link">
+						<div class="nav__badge">8</div>
 						<i class="fas fa-comment"></i>
 					</a>
 				</li>
